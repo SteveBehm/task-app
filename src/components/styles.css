@@ -43,6 +43,18 @@
   transform: scale(0.8);
   box-shadow: 0 0 2px cadetblue;
 }
+.container {
+  width: 95%;
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.todos_heading {
+  font-size: 26px;
+  color: slateblue;
+}
 
 .todos {
   border-radius: 5px;
@@ -50,6 +62,10 @@
   flex-direction: column;
   width: 47.5%;
   padding: 15px;
+}
+
+.remove {
+  color: lightcoral;
 }
 
 .todos_single {
@@ -76,6 +92,18 @@
   outline: none;
 }
 
+.dragactive {
+  box-shadow: 0 0 5px slateblue;
+}
+
+.dragcomplete {
+  box-shadow: 0 0 5px lightcoral;
+}
+
+.dragging {
+  box-shadow: 0 0 5px black;
+}
+
 .icon {
   margin-left: 16px;
   font-size: 20px;
@@ -100,5 +128,10 @@
   .todos {
     width: 95%;
     margin-bottom: 10px;
+  }
+
+  .container {
+    width: 95%;
+    flex-direction: column;
   }
 }
